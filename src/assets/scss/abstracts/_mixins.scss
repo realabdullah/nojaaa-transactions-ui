@@ -1,0 +1,40 @@
+@mixin media-breakpoint-down($breakpoint) {
+    @media (max-width: map-get($grid-breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+@mixin font($font-size, $line-height, $mobile-font-size: $font-size, $mobile-line-height: $line-height) {
+    font-size: $font-size;
+    line-height: $line-height;
+
+    @include media-breakpoint-down(md) {
+        font-size: $mobile-font-size;
+        line-height: $mobile-line-height;
+    }
+}
+
+@mixin component-width($max-width) {
+    width: 100%;
+    max-width: $max-width;
+}
+
+@mixin sizing($height, $width, $desktop-height: $height, $desktop-width: $width) {
+    height: $height;
+    width: $width;
+
+    @include media-breakpoint-down(md) {
+        height: $desktop-height;
+        width: $desktop-width;
+    }
+}
+
+@mixin font-size($font-size, $line-height, $mobile-font-size: $font-size, $mobile-line-height: $line-height) {
+    font-size: $font-size;
+    line-height: $line-height;
+
+    @include media-breakpoint-down(md) {
+        font-size: $mobile-font-size;
+        line-height: $mobile-line-height;
+    }
+}

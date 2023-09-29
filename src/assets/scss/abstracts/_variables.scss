@@ -1,0 +1,26 @@
+// fonts
+$font-inter: 'Inter';
+
+// colors
+$col-white: #ffffff;
+$col-black: #000000;
+$col-paleBlue: #f5f6fc;
+$col-paleLavenderWhite: #f9f9ff;
+$col-cloudyWhite: #f9fafc;
+$col-slatePurple: #5a5477;
+$col-slateNavy: #2f3948;
+$col-bluePurple: #6868f7;
+$col-paleBlueGrey: #f0f0fe;
+$col-paleCrimsom: #eb57571a;
+$col-grey: #f2f2f2;
+$col-charcoalBrown: #585757;
+$col-brightOrange: #f2994a;
+$col-paleAmber: #f2994a1a;
+$col-brightRed: #eb5757;
+$col-blueGrey: #bdbbc9;
+$col-darkGrey: #848484;
+
+// breakpoints
+$grid-breakpoints: (
+    'md': 768px
+) !default;
